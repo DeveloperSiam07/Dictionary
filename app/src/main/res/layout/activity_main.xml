@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/searchButton"
+            android:hint="Search word here"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/search_bar_shape"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/poppins"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            />
+        
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/primary"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wordBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="word"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#DE742D"
+        />
+
+    <TextView
+        android:id="@+id/phoneticsBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="phonetics"
+        android:layout_marginTop="4px"
+        android:fontFamily="@font/poppins"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        />
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/meaningRV"
+        />
+
+</LinearLayout>

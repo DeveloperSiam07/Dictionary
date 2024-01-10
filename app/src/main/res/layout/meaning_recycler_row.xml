@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@drawable/search_bar_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/partsOfspeechTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textColor="#0091EA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="noun" />
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Definition :" />
+
+    <TextView
+        android:id="@+id/definitionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        tools:text="1 definition \n\n2 definition \n\n3 definition "
+        />
+
+    <TextView
+        android:id="@+id/synonym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Synonyms :" />
+
+    <TextView
+        android:id="@+id/synonymTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins"
+        tools:text="synonym1, synonym2, synonym3, synonym4"
+        />
+
+    <TextView
+        android:id="@+id/antonym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Antonyms:" />
+    <TextView
+        android:id="@+id/antonymTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins"
+        tools:text="antonym1, antonym2, antonym3, antonym4"
+        />
+
+
+</LinearLayout>
